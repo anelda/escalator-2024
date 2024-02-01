@@ -5,63 +5,34 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: hero
+  - block: slider
     content:
-      title: |
-        Wowchemy
-        Research Group
-      image:
-        filename: welcome.jpg
-      text: |
-        <br>
+      slides:
+      - title: |
+          <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
-  
-  - block: collection
-    content:
-      title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
-    design:
-      view: card
-      columns: '1'
-  
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
+          Towards an active and inclusive community of practice in Digital Humanities and Computational Social Sciences in South Africa
+          {style="color: white; font-size: 2.4rem; "}  
+        
+          <br>
+        content: 
+        align: center
+        background:
+          image:
+            filename: welcome.jpg
+            filters:
+              brightness: 0.5
           position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
-  
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+          color: '#666'
     design:
-      columns: '1'
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      slide_height: '500px'
+      is_fullscreen: false
+      # Automatically transition through slides?
+      loop: false
+      # Duration of transition between slides (in ms)
+      interval: 2000
+
+
+  
 ---

@@ -4,21 +4,40 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Tour
-    url: tour
+  - name: ABOUT
+    url: about
     weight: 10
-  - name: News
-    url: post
+
+  - name: CONNECT
+    url: connect
     weight: 20
-  - name: People
-    url: people
+  - name: LEARN & TEACH
     weight: 30
-  - name: Events
-    url: event
+  - name: Digital Training & Champions Initiative
+    parent: LEARN & TEACH
+    url: learn-teach/tracks
+    weight: 10
+  - name: Workshops & Courses
+    parent: LEARN & TEACH
+    url: learn-teach/workshops
+    weight: 10
+  
+
+
+
+  - name: FIND & SHARE
+    url: find-share
     weight: 40
-  - name: Publications
-    url: publication
+
+  - name: EVENTS
+    url: event
     weight: 50
-  - name: Contact
-    url: contact
+  - name: PEOPLE
+    url: people
     weight: 60
+  - name: BLOG
+    url: post
+    weight: 70
+  - name: CONTACT
+    url: contact
+    weight: 80
